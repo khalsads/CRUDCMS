@@ -1,4 +1,82 @@
-﻿/* Move down content because we have a fixed navbar that is 50px tall */
+﻿/******************
+     GLOBAL CSS
+*******************/
+.inblock        {   display: inline-block;  }
+.flex_column    {   display: flex;    flex-direction: column; }
+.flex_row       {   display: flex;  flex-direction: row;    }
+.vh_center      {   justify-content: center;   align-items: center; }
+.test_border    {   border: .125rem dotted black;   }
+.w100           {   width: 100%;    }
+.h100           {   height: 100%;   }
+.hvh100         {   height: 100vh;  }
+.hidden         {   display: none;  }
+
+
+.main{
+    height:85vh;
+    justify-content:space-between;
+}
+/******************
+       ASIDE
+*******************/
+.aside1 {
+    width: 30%;
+    height: 100%;
+    padding: 5px;
+}
+    .aside1 div {
+        height: 60px;
+        margin-bottom: 5px;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+        .aside1 div:hover {
+            background-color:white;
+            border:2px solid black;
+            color: black;
+        }
+        .aside1 div::selection {
+            background-color: grey;
+            border: 2px solid black;
+            color: black;
+        }
+
+
+/***************************************/
+
+/******************
+      SECTION
+*******************/
+.sectioncontainer {
+    width: 70%;
+    background-color: #dadada;
+}
+.section {
+    padding: 0 10px;
+}
+.PageHeadingLabel, .PageBodyLabel {
+    font-size: 20px;
+}
+.PageHeading {
+    font-size: 20px;
+    padding:5px 20px;
+}
+.PageBody {
+    height: 400px;
+    width:500px;
+}
+.AddPageBtn {
+    width:300px;
+    height:50px;
+    font-size: 30px;
+    padding: 5px;
+}
+.AddPage div:first-child {
+    justify-content: space-between;
+    border-bottom: 2px dashed black;
+}
+/* Move down content because we have a fixed navbar that is 50px tall */
 body {
     padding-top: 50px;
     padding-bottom: 20px;
@@ -29,3 +107,4 @@ textarea {
         padding: 0;
     }
 }
+
