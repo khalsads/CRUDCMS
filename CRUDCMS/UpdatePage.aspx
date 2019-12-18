@@ -1,29 +1,17 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddPage.aspx.cs" Inherits="CRUDCMS.Pages" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UpdatePage.aspx.cs" Inherits="CRUDCMS.UpdatePage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <main class="main flex_column vh_center">
-
-
-        <%--Not working as per required to hide it for now--%>
-        <%-- <aside class="aside1 flex_column h100">
-            <asp:Button runat="server" ID="sidebar_AddNewPage" Text="Add New Page" CssClass="sidebar_AddNewPage" OnClick="sidebar_AddNewPage_Click" />
-            <asp:Button runat="server" ID="sidebar_AllPages" Text="List All Pages" CssClass="sidebar_AllPages" OnClick="sidebar_AllPages_Click" />
-        </aside>--%>
-
-        
-        
-        <%-- This Div to wrap all section elements as only one section will be visible at a time --%>
         <div class="sectioncontainer flex_column vh_center h100">
-
-            <%-- Section for Add New Page --%>
-            <section runat="server" class="section flex_column AddPage h100 w100" id="AddPage">
+            <%-- Section for Update Selected Page --%>
+            <section runat="server" class="section flex_column UpdatePage h100 w100" id="UpdatePage">
                 <div class="flex_row vh_center w100">
-                    <h2>Add New Page</h2>
+                    <h2>Update Page</h2>
                     <asp:Button
                         runat="server"
-                        ID="AddPageBtn"
-                        Text="Add Page"
-                        CssClass="AddPageBtn" OnClick="AddPageBtn_Click" />
+                        ID="UpdatePageBtn"
+                        Text="Update Page"
+                        CssClass="AddPageBtn" />
                 </div>
 
                 <div class="div_PageHeading flex_column vh_center">
@@ -63,19 +51,6 @@
                         ErrorMessage="Page Body Cannot be empty"></asp:RequiredFieldValidator>
                 </div>
             </section>
-
-
-            <%-- Was planning to add side bad to this page to have following sections working--%>
-            <%-- Section to Show All Pages in database --%>
-            <section class="section AllPage h100 hidden test_border">
-                <h2>All Page</h2>
-            </section>
-
-            <%-- Section to d --%>
-            <section class="section DelPage h100 hidden test_border">
-                <h2>Delete Pages</h2>
-            </section>
         </div>
     </main>
-
 </asp:Content>

@@ -74,7 +74,7 @@
     font-size: 30px;
     padding: 5px;
 }
-.AddPage div:first-child {
+.AddPage div:first-child, .UpdatePage div:first-child {
     justify-content: space-between;
     border-bottom: 2px dashed black;
 }
