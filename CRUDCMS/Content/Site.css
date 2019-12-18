@@ -16,30 +16,32 @@
     height:85vh;
     justify-content:space-between;
 }
-/******************
-       ASIDE
-*******************/
-.aside1 {
-    width: 30%;
-    height: 100%;
-    padding: 5px;
+
+/*List All Page CSS*/
+.page_list {
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
 }
-    .aside1 div {
-        height: 60px;
-        margin-bottom: 5px;
-        text-align: center;
-        background-color: black;
-        color: white;
+
+    .page_list tr {
+        background-color: aliceblue;
+        width: 20%;
+        border: 2px dashed green;
+        display: inline-block;
+        height: 200px;
+        justify-content: left;
     }
-        .aside1 div:hover {
-            background-color:white;
-            border:2px solid black;
-            color: black;
+
+        .page_list tr:first-child {
+            display: none;
         }
-        .aside1 div::selection {
-            background-color: grey;
-            border: 2px solid black;
-            color: black;
+
+        .page_list tr td {
+            background-color: antiquewhite;
+            display: flex;
+            width: 100%;
+            height: 25%;
         }
 
 
